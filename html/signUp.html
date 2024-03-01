@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/signUpStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <h2>Sign Up</h2>
+
+    <form id="signUp">
+        <label>Username :</label>
+        <input type="text" id="username" required placeholder="Enter Username...">
+
+        <label>Email :</label>
+        <input type="email" id="email" required placeholder="example@gmail.com...">
+
+        <label>Password :</label>
+        <input type="password" id="password" required placeholder="Enter Password...">
+
+        <div id="buttons">
+            <button id="signUpBtn" onclick="register()">Register</button>
+            <button id="loginBtn" onclick="goToLogin()">Login</button>
+        </div>
+    </form>
+</body>
+<script src="/js/signUpScript.js"></script>
+
+</html>

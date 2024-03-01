@@ -1,0 +1,45 @@
+* {
+    font-family: "Oswald", sans-serif;
+}
+
+h2 {
+    font-size: 100px;
+    text-align: center;
+    font-family: "Honk", system-ui;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+}
+
+label {
+    margin-top: 40px;
+    font-family: "Honk", system-ui;
+    margin-bottom: -20px;
+}
+
+input {
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 23px;
+}
+
+button {
+    margin-top: 30px;
+    font-family: "Honk", system-ui;
+    width: 200px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    
+    transition: 0.1s;
+    transform: rotate(5deg);
+}

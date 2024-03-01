@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>manac's to do list</title>
+  <link rel="stylesheet" href="/css/toDoListStyle.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <button id="sidebarBtn">☰</button>
+
+    <div class="sidebar" id="sidebar">
+
+      <button id="closeSidebarBtn">✖</button>
+
+      <ul>
+        <p>Sort By :</p>
+        <li><button>AppWeb</button></li>
+        <li><button>Prog</button></li>
+        <li><button>Math</button></li>
+      </ul>
+    </div>
+  </header>
+
+  <h1>manac's To Do List</h1>
+
+  <div class="container">
+    <p></p>
+    <input type="text" id="taskInput" placeholder="New Task..." />
+    <button id="addTaskBtn">Add</button>
+    <button id="clearAll">Clear All</button>
+    <p></p>
+  </div>
+
+  <div>
+    <ul id="taskList"></ul>
+  </div>
+
+</body>
+<script src="/js/toDoListScript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

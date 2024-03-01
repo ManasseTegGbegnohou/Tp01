@@ -1,0 +1,188 @@
+* {
+    font-family: "Oswald", sans-serif;
+}
+
+html ::-webkit-scrollbar { 
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    padding: 50px;
+    text-align: center;
+    font-family: "Honk", system-ui;
+    font-size: 100px;
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    transform: scale(2);
+    background: linear-gradient(to bottom, #ffff7c 0%, #ff3eaf 100%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container button {
+    background: linear-gradient(to bottom, #ffff7c 0%, #ff3eaf 100%);
+}
+
+.container button:hover{
+    
+    transition: 0.15s;
+    transform: scale(1.1) rotate(-15deg);
+}
+
+.container input {
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    margin-top: 200px;
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+li {
+    margin-top: 50px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 30px;
+    background: linear-gradient(to bottom, #ffff7c 0%, #ff3eaf 100%);
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li div {
+    display: inline;
+}
+
+li div h1{
+    font-family: "Oswald", sans-serif;
+    padding: 0px;
+    font-size: 30px;
+    text-align: left;
+    width: 1000px;
+}
+
+li div button {
+    border-radius: 14px;
+    margin-right: 25px;
+    background: linear-gradient(to bottom, #ffff7c 0%, #ff3eaf 100%);
+    border: 3px solid black;
+    font-size: 24px;
+    width: 50px;
+    float: right;
+    margin-top: -10px;
+}
+
+li div button:hover{
+    transform: scale(1.1);
+    transition: 0.15s;
+    transform: rotate(15deg);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.1);
+    transition: 0.3s;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 8px;
+    margin-top: 0px;
+
+}
+
+.sidebar ul p {
+    font-family: "Honk", system-ui;
+    font-size: 50px;
+}
+
+.sidebar ul li{
+    
+    
+    background: none;
+    border: none;
+}
+
+.sidebar ul li button {
+    position: relative;
+    font-family: "Honk", system-ui;
+    background: none;
+    transform: scale(3);
+    border-radius: 14px;
+    background: linear-gradient(to bottom, #ffff7c 0%, #ff3eaf 100%);
+    margin-left: 50px;
+    transition: 0.5s ;
+    
+}
+
+.sidebar ul li button:hover{
+    transform: rotate(15deg);
+    transition: 0.5s;
+}
+
+#sidebarBtn {
+    top: 0;
+    left: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+    background: linear-gradient(to bottom, #ffff7c 0%, #ff3eaf 100%);
+    transform: scale(2);
+    transition: 0.2s;
+}
+
+#sidebarBtn:hover{
+    
+    transition: 0.15s;
+    transform: scale(2) rotate(15deg);
+}
+
+#closeSidebarBtn {
+    top: 0;
+    left: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+    background: linear-gradient(to bottom, #ffff7c 0%, #ff3eaf 100%);
+    transform: scale(2);
+    transition: 0.2s;
+}
+
+#closeSidebarBtn:hover{
+    
+    transition: 0.15s;
+    transform: scale(2) rotate(-45deg);
+}
+
+.sidebarActive {
+    top: 0;
+    right: 0;
+    transition: 0.1s;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #e0dede;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    z-index: 999;
+}
