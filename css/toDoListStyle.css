@@ -2,7 +2,7 @@
     font-family: "Oswald", sans-serif;
 }
 
-html ::-webkit-scrollbar { 
+html ::-webkit-scrollbar {
     display: none;
 }
 
@@ -12,7 +12,6 @@ body {
 
 h1 {
     padding: 50px;
-    text-align: center;
     font-family: "Honk", system-ui;
     font-size: 100px;
 }
@@ -30,10 +29,11 @@ h1 {
 
 .container button {
     background: linear-gradient(to bottom, #ffff7c 0%, #ff3eaf 100%);
+    transition: 0.15s;
 }
 
-.container button:hover{
-    
+.container button:hover {
+
     transition: 0.15s;
     transform: scale(1.1) rotate(-15deg);
 }
@@ -69,7 +69,7 @@ li div {
     display: inline;
 }
 
-li div h1{
+li div h1 {
     font-family: "Oswald", sans-serif;
     padding: 0px;
     font-size: 30px;
@@ -88,7 +88,7 @@ li div button {
     margin-top: -10px;
 }
 
-li div button:hover{
+li div button:hover {
     transform: scale(1.1);
     transition: 0.15s;
     transform: rotate(15deg);
@@ -109,7 +109,6 @@ li div button:hover{
     padding: 0;
     margin-left: 8px;
     margin-top: 0px;
-
 }
 
 .sidebar ul p {
@@ -117,9 +116,7 @@ li div button:hover{
     font-size: 50px;
 }
 
-.sidebar ul li{
-    
-    
+.sidebar ul li {
     background: none;
     border: none;
 }
@@ -132,11 +129,11 @@ li div button:hover{
     border-radius: 14px;
     background: linear-gradient(to bottom, #ffff7c 0%, #ff3eaf 100%);
     margin-left: 50px;
-    transition: 0.5s ;
-    
+    transition: 0.5s;
+
 }
 
-.sidebar ul li button:hover{
+.sidebar ul li button:hover {
     transform: rotate(15deg);
     transition: 0.5s;
 }
@@ -151,8 +148,8 @@ li div button:hover{
     transition: 0.2s;
 }
 
-#sidebarBtn:hover{
-    
+#sidebarBtn:hover {
+
     transition: 0.15s;
     transform: scale(2) rotate(15deg);
 }
@@ -167,10 +164,10 @@ li div button:hover{
     transition: 0.2s;
 }
 
-#closeSidebarBtn:hover{
-    
+#closeSidebarBtn:hover {
+
     transition: 0.15s;
-    transform: scale(2) rotate(-45deg);
+    transform: scale(2) rotate(-15deg);
 }
 
 .sidebarActive {
@@ -185,4 +182,53 @@ li div button:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     padding: 20px;
     z-index: 999;
+}
+
+#searchButton {
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+#searchButton:hover {
+    transition: 0.25s;
+    transform: scale(1.5);
+}
+
+#search-input {
+    border-radius: 5px;
+}
+
+#searchBar {
+    margin-top: 100px;
+    transform: scale(1.5);
+    position: relative;
+    margin-left: 44px;
+}
+
+#savedItems{
+    font-family: "Honk", system-ui;
+    text-align: center;
+    font-size:100px;
+    margin-top: 500px;
+}
+
+#list{
+padding-bottom: 100px;
+}
+
+#comment{
+    position: relative;
+    transform: rotate(10deg);
+    margin-top: -140px;
+    margin-left: -750px;
+    font-size: 30px;
+    z-index: 900;
+    padding-bottom: 90px;
+    font-weight: 700;
+}
+
+#savedItems{
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 30px;
 }

@@ -38,8 +38,8 @@ button {
     cursor: pointer;
 }
 
-button:hover{
-    
+button:hover {
+
     transition: 0.1s;
     transform: rotate(5deg);
 }
