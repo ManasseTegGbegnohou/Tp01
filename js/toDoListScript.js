@@ -3,6 +3,8 @@ const addTaskBtn = document.getElementById("addTaskBtn");
 const taskList = document.getElementById("taskList");
 const clearAll = document.getElementById("clearAll");
 
+//var listFinishedTasks = [];
+
 var task = "task";
 var i = 0;
 addTaskBtn.addEventListener("click", addTask);
@@ -39,6 +41,14 @@ function addTask() {
                 h1ToFinish.style.textDecoration = '';
             } else {
                 h1ToFinish.style.textDecoration = 'line-through';
+
+                // essaie pour mettre la tache finie dans une liste
+                /*if (listFinishedTasks.includes(item)) {
+                } else {
+                    // Add the item to the list
+                    myList.push(item);
+                    console.log("Item added to the list");
+                }*/
             }
         });
 
